@@ -52,7 +52,7 @@ exports.up = function(knex) {
           .inTable("resources")
           .onUpdate("CASCADE")
           .onDelete("RESTRICT");
-        tbl.unique(["project_id", "resource_id"]);
+        // tbl.unique(["project_id", "resource_id"]);
       });
   };
   
